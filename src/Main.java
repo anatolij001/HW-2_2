@@ -26,17 +26,23 @@ public class Main {
 
      PrintService printService = new PrintService();
 
-     printService.print(gryffindors);
+     for (Gryffindor gryff : gryffindors){System.out.println(gryff);}
+
      printService.findTheBestStudentOnFaculty(gryffindors);
 
-     printService.print(slytherins);
+     for (Slytherin slyth : slytherins){
+      System.out.println(slyth);
+     }
      printService.findTheBestStudentOnFaculty(slytherins);
 
-
-     printService.print(hufflepuffs);
+     for (Hufflepuff huff : hufflepuffs){
+      System.out.println(huff);
+     }
      printService.findTheBestStudentOnFaculty(hufflepuffs);
 
-     printService.print(ravenclaws);
+     for (Ravenclaw raven : ravenclaws){
+      System.out.println(raven);
+     }
      printService.findTheBestStudentOnFaculty(ravenclaws);
 
      printService.findTheBestStudentOnHogwarts(gryffindors[0], slytherins[0]);

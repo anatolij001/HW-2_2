@@ -1,7 +1,8 @@
 // факультет Гриффиндор
-public class Gryffindor extends Hogwarts{
+public class Gryffindor extends Hogwarts {
     // nobility - благородство, honor - честь, bravery - храбрость
     private final int nobility, honor, bravery;
+
     public Gryffindor(String name, String surname, int magicPowerLevel, int transgressionDistance, int nobility, int honor, int bravery) {
         super(name, surname, magicPowerLevel, transgressionDistance);
         this.nobility = nobility;
@@ -21,6 +22,11 @@ public class Gryffindor extends Hogwarts{
         return bravery;
     }
 
-
-
+    @Override
+    public String toString() {
+        return getName() + " " + getSurname() + super.toString() +
+                ", благородство = " + nobility +
+                ", честь = " + honor +
+                ", храбрость = " + bravery;
+    }
 }

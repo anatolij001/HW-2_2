@@ -32,4 +32,14 @@ public class Slytherin extends Hogwarts{
     public int getThirstForPower() {
         return thirstForPower;
     }
+
+    @Override
+    public String toString() {
+        return getName() + " " + getSurname() + super.toString() +
+                ", хитрость = " + cunning +
+                ", решительность = " + determination +
+                ", амбициозность = " + ambition +
+                ", находчивость = " + resourcefulness +
+                ", жажда власти = " + thirstForPower;
+    }
 }

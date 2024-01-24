@@ -1,6 +1,6 @@
 public class Hogwarts {
-    String name, surname;
-    int magicPowerLevel = 0, transgressionDistance = 0;
+    private String name, surname;
+    private int magicPowerLevel = 0, transgressionDistance = 0;
 
     public Hogwarts(String name, String surname, int magicPowerLevel, int transgressionDistance) {
         this.name = name;
@@ -23,5 +23,11 @@ public class Hogwarts {
 
     public int getTransgressionDistance() {
         return transgressionDistance;
+    }
+
+    @Override
+    public String toString() {
+        return ": мощность магии = " + magicPowerLevel +
+               ", дальность трансгрессии = " + transgressionDistance;
     }
 }

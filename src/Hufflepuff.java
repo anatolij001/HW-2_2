@@ -21,4 +21,12 @@ public class Hufflepuff extends Hogwarts{
     public int getHonesty() {
         return honesty;
     }
+
+    @Override
+    public String toString() {
+        return getName() + " " + getSurname() + super.toString() +
+                ", трудолюбие = " + hardworking +
+                ", верность = " + loyalty +
+                ", честность = " + honesty;
+    }
 }

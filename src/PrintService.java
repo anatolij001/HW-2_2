@@ -1,53 +1,4 @@
 public class PrintService {
-    public void print(Gryffindor[] gryffindors) {
-        for (Gryffindor griff : gryffindors) {
-            System.out.println(griff.getName() + " " + griff.getSurname() +
-                    ": мощность магии = " + griff.getMagicPowerLevel() +
-                    ", дальность трансгрессии = " + griff.getTransgressionDistance() +
-                    ", благородство = " + griff.getNobility() +
-                    ", честь = " + griff.getHonor() +
-                    ", храбрость = " + griff.getBravery());
-        }
-        System.out.println();
-    }
-
-    public void print(Slytherin[] slytherins){
-        for (Slytherin slyth : slytherins){
-            System.out.println(slyth.getName() + " " + slyth.getSurname() +
-                    ": мощность магии = " + slyth.getMagicPowerLevel() +
-                    ", дальность трансгрессии = " + slyth.getTransgressionDistance() +
-                    ", хитрость = " + slyth.getCunning() +
-                    ", решительность = " + slyth.getDetermination() +
-                    ", амбициозность = " + slyth.getAmbition());
-        }
-        System.out.println();
-    }
-
-    public void print(Hufflepuff[] hufflepuffs){
-        for (Hufflepuff huff : hufflepuffs){
-            System.out.println(huff.getName() + " " + huff.getSurname() +
-                    ": мощность магии = " + huff.getMagicPowerLevel() +
-                    ", дальность трансгрессии = " + huff.getTransgressionDistance() +
-                    ", трудолюбие = " + huff.getHardworking() +
-                    ", верность = " + huff.getLoyalty() +
-                    ", честность = " + huff.getHonesty());
-        }
-        System.out.println();
-    }
-
-    public void print(Ravenclaw[] ravenclaws){
-        for (Ravenclaw ravencl : ravenclaws){
-            System.out.println(ravencl.getName() + " " + ravencl.getSurname() +
-                    ": мощность магии = " + ravencl.getMagicPowerLevel() +
-                    ", дальность трансгрессии = " + ravencl.getTransgressionDistance() +
-                    ", умны = " + ravencl.getSurname() +
-                    ", мудры = " + ravencl.getWisdom() +
-                    ", остроумны = " + ravencl.getWitty() +
-                    ", творчество = " + ravencl.getCreativity());
-        }
-        System.out.println();
-    }
-
     public void findTheBestStudentOnFaculty(Gryffindor[] gryffindors){
         int propertiesFirstStudent = 0;
         int propertiesSecondStudent = 0;
@@ -85,7 +36,7 @@ public class PrintService {
         if (propertiesFirstStudent > propertiesSecondStudent) {
             System.out.println(hufflepuffs[0].getName() + " лучший Пуффендуец, чем " + hufflepuffs[1].getName() + ". Результат " + propertiesFirstStudent + " / " + propertiesSecondStudent);
         } else if (propertiesFirstStudent < propertiesSecondStudent) {
-            System.out.println(hufflepuffs[1].getName() + " лучший Пуффендуей, чем " + hufflepuffs[0].getName() + ". Результат " + propertiesSecondStudent + " / " + propertiesFirstStudent);
+            System.out.println(hufflepuffs[1].getName() + " лучший Пуффендуец, чем " + hufflepuffs[0].getName() + ". Результат " + propertiesSecondStudent + " / " + propertiesFirstStudent);
         } else System.out.println("И " + hufflepuffs[0].getName() + ", и " + hufflepuffs[1].getName() + " одинаково хороши." + " Результат " + propertiesFirstStudent + " / " + propertiesSecondStudent);
         System.out.println();
     }

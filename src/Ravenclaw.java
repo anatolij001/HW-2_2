@@ -26,4 +26,13 @@ public class Ravenclaw extends Hogwarts{
     public int getCreativity() {
         return creativity;
     }
+
+    @Override
+    public String toString() {
+        return getName() + " " + getSurname() + super.toString() +
+                ", умны = " + smart +
+                ", мудры = " + wisdom +
+                ", остроумны = " + witty +
+                ", творчество = " + creativity;
+    }
 }
